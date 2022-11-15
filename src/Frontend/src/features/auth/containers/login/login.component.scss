@@ -1,0 +1,43 @@
+.layout-wrapper {
+  width: 368px;
+  display: block;
+
+  hr {
+    margin: 0;
+    border-color: var(--dark-violet);
+    opacity: 0.2;
+  }
+}
+
+.layout-wrapper ::ng-deep {
+
+  .p-message-wrapper {
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .p-message-detail {
+    margin: 0 5px;
+  }
+
+  .p-message-icon {
+    display: none;
+  }
+
+  .p-message-close {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.back-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  span {
+    padding-left: 10px;
+  }
+}

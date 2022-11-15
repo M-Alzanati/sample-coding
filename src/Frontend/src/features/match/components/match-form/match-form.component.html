@@ -1,0 +1,12 @@
+<p-card [style]="{'width': '30rem', 'margin-bottom': '2em', 'background': 'skyblue'}">
+  <label for="name">Match Name: <b>{{name}}</b></label>
+  <div *ngIf="user">
+    <label for="user">Match User: <b>{{user}}</b></label>
+  </div>
+  <div *ngIf="value">
+    <label for="value">Match Winning Score: <b>{{value}}</b></label>
+  </div>
+  <div *ngIf="timeStamp">
+    <label for="timeStamp">TimeStamp: <b>{{timeStamp}}</b></label>
+  </div>
+</p-card>

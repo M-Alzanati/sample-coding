@@ -1,0 +1,51 @@
+<form (ngSubmit)="handleSubmit()" [formGroup]="form">
+  <div class="field">
+    <label for="username">Username or email</label>
+    <input
+      formControlName="username"
+      id="username"
+      F
+      pInputText
+      type="text"
+      name="username"
+      autocomplete="username"
+      class="w-full"
+    />
+    <small
+      *ngIf="
+        username?.invalid && username?.dirty
+      "
+      class="p-error"
+    >
+      Required
+    </small>
+  </div>
+  <div class="field">
+    <label for="password">Password</label>
+    <input
+      formControlName="password"
+      id="password"
+      pPassword
+      type="password"
+      name="current-password"
+      autocomplete="current-password"
+      class="w-full"
+    />
+    <small
+      *ngIf="
+        password?.invalid && password?.dirty
+      "
+      class="p-error"
+    >
+      Required
+    </small>
+  </div>
+  <div class="text-center">
+    <button
+      loader-button
+      class="mt-2 mb-4 p-button-lg w-full"
+      label="Login"
+      pButton
+    ></button>
+  </div>
+</form>

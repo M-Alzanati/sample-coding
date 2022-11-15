@@ -1,0 +1,10 @@
+<div class="layout-wrapper">
+    <app-header
+      (onLogout)="handleLogout()"
+      [username]="username"
+    ></app-header>
+    <div class="content-layout">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Example.CodingTask.Core\Example.CodingTask.Core.csproj" />
+    <ProjectReference Include="..\Example.CodingTask.Data\Example.CodingTask.Data.csproj" />
+    <ProjectReference Include="..\Example.CodingTask.Utilities\Example.CodingTask.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Example.CodingTask.Common\Example.CodingTask.Common.csproj" />
+	  <ProjectReference Include="..\Example.CodingTask.Core\Example.CodingTask.Core.csproj" />
+	  <ProjectReference Include="..\Example.CodingTask.Utilities\Example.CodingTask.Utilities.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,100 @@
+.header-layout {
+  height: 56px;
+  // min-width: 1280px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1110;
+  background: var(--white);
+  box-shadow: 4px 4px 30px rgba(92, 190, 220, 0.07);
+}
+
+.logo {
+  line-height: 0;
+  padding: 0 24px 0 56px;
+}
+
+.menubar {
+  flex-grow: 1;
+  padding: 0 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & > div + div {
+    margin-left: 50px;
+  }
+}
+
+.menubar ::ng-deep {
+  .p-button {
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    color: var(--gray);
+
+    &:enabled:active, &:enabled:hover {
+      background: none;
+    }
+  }
+
+  .p-dropdown {
+    background: transparent;
+    width: 260px;
+    border-radius: 16px;
+
+    &:focus, &.p-dropdown:not(.p-disabled):hover {
+      border: 1px solid rgba(#4C4C4E, 0.1);
+    }
+    .p-inputtext {
+      padding: 4px 22px;
+    }
+
+    .p-dropdown-panel {
+      margin-top: 11px;
+    }
+  }
+
+  .dropdown-menu .p-menu-overlay {
+    top: 56px!important;
+  }
+
+  .dropdown-menu .p-button .pi-chevron-down {
+    font-size: 11px;
+  }
+
+  .dropdown-menu.user .p-button {
+    padding: 0 5px 0 0;
+
+    .p-button-icon-righ {
+      margin-left: 8px;
+    }
+  }
+
+  .dropdown-menu.account {
+    margin-right: 20px;
+  }
+
+  .icon-menu .p-button {
+    width: 32px;
+    padding: 0;
+
+    .p-button-icon  {
+      font-size: 16px;
+    }
+  }
+
+  .p-avatar {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    background: var(--blue);
+    color: var(--white);
+    vertical-align: middle;
+    img {
+      object-fit: cover;
+    }
+  }
+}
