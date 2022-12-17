@@ -34,9 +34,10 @@ $ ng serve --ssl
 ```
 **Build Backend**
 ```bash
-$ cd src/Backend
-# Create database
-$ dotnet ef database update --project Example.CodingTask.Data
+$ cd Backend/src
+$ docker build -t codingtaskimage .
+$ docker run -d -p 44337:80 -p 44338:443 --name codingtaskapi codingtaskimage
+
 
 # Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings
 

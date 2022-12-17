@@ -1,0 +1,26 @@
+<div class="header-layout">
+  <div class="logo inline-flex align-items-center">
+  </div>
+  <div class="menubar">
+    <div class="dropdown-menu user">
+      <p-menu
+        #userPopup
+        [showTransitionOptions]="'0ms'"
+        [hideTransitionOptions]="'0ms'"
+        [popup]="true"
+        [model]="userMenu"
+      ></p-menu>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-chevron-down"
+        iconPos="right"
+        [disabled]="true"
+        [label]="username"
+        (click)="userPopup.toggle($event)"
+        class="p-button-rounded p-button-secondary p-button-text"
+      >
+      </button>
+    </div>
+  </div>
+</div>

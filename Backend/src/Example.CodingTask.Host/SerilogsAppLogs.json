@@ -1,0 +1,30 @@
+{"Timestamp":"2022-12-17T15:44:12.9667536+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:44:12.9728887+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:44:12.9736728+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:47:30.6922567+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:47:30.6976815+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:47:30.6984928+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:48:41.7003797+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:48:41.7055994+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T15:48:41.7199696+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:30:06.6994757+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:30:06.7052656+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:30:06.7064537+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:31:01.7956042+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:31:01.8016136+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:31:01.8024427+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:32:33.1946317+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:32:33.1993299+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:32:33.2001655+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:34:23.0229909+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:34:23.0284619+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:34:23.0294286+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:41:05.2551149+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:41:05.2617741+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:41:05.2648961+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:42:46.5838905+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:42:46.5915071+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:42:46.5923624+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:44:25.7614781+00:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:44:25.7666073+00:00","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2022-12-17T16:44:25.7698428+00:00","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"/app","SourceContext":"Microsoft.Hosting.Lifetime"}}

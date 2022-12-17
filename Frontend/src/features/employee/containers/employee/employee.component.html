@@ -1,0 +1,70 @@
+<div style="margin-top: 50px; margin-left: 50px; padding-bottom: 50px;">
+  <div>
+    <h2>All Employees</h2>
+    <p-scrollPanel [style]="{width: '100%', height: '200px', 'overflow-x': 'hidden'}">
+      <app-employee-form *ngFor="let e of employees" [firstName]="e.firstName" [lastName]="e.lastName" [id]="e.id">
+      </app-employee-form>
+    </p-scrollPanel>
+    <br>
+  </div>
+
+  <div>
+    <h2>Get Employee By Id</h2>
+    <input pInputText type="text" style="width: 300px;" id="EmployeeId" required [(ngModel)]="employeeId"
+      name="Employee Id">
+    <button style="margin-left: 10px;" (click)="getEmployeeById()" pButton>Fetch</button>
+    <app-employee-form style="margin-top: 10px;" [firstName]="employee.firstName"
+      [lastName]="employee.lastName"></app-employee-form>
+    <br>
+  </div>
+
+  <div>
+    <h2>Create Employee</h2>
+    <div style="margin-bottom: 10px;">
+      <label> <span style="font-size: medium; font-weight: 500; margin-right: 10px;">First Name</span>
+        <input pInputText type="text" style="width: 300px;" id="employeeFirstName" required
+          [(ngModel)]="createEmployeeDto.firstName" name="Employee FirstName">
+      </label>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label> <span style="font-size: medium; font-weight: 500; margin-right: 10px;">Last Name</span>
+        <input pInputText type="text" style="width: 300px;" id="employeeLastName" required
+          [(ngModel)]="createEmployeeDto.lastName" name="Employee LastName">
+      </label>
+    </div>
+    <button style="margin-left: 10px;" (click)="createEmployee()" pButton>Create Employee</button>
+    <br>
+  </div>
+
+  <div style="margin-top: 50px;">
+    <h2>Update Employee</h2>
+    <div style="margin-bottom: 10px;">
+      <label> <span style="font-size: medium; font-weight: 500; margin-right: 10px;">Employee Id</span>
+        <input pInputText type="text" style="width: 300px;" id="employeeUpdateId" required
+          [(ngModel)]="updateEmployeeDto.id" name="Employee Id">
+      </label>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label> <span style="font-size: medium; font-weight: 500; margin-right: 10px;">First Name</span>
+        <input pInputText type="text" style="width: 300px;" id="employeeFirstName" required
+          [(ngModel)]="updateEmployeeDto.firstName" name="Employee FirstName">
+      </label>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label> <span style="font-size: medium; font-weight: 500; margin-right: 10px;">Last Name</span>
+        <input pInputText type="text" style="width: 300px;" id="employeeLastName" required
+          [(ngModel)]="updateEmployeeDto.lastName" name="Employee LastName">
+      </label>
+    </div>
+    <button style="margin-left: 10px;" (click)="updateEmployee()" pButton>Update Employee</button>
+    <br>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <h2>Delete Employee By Id</h2>
+    <input pInputText type="text" style="width: 300px;" id="deleteEmployeeId" required [(ngModel)]="deleteEmployeeId"
+      name="Employee Id">
+    <button style="margin-left: 10px;" (click)="deleteEmployeeById()" pButton>Delete</button>
+  </div>
+
+</div>

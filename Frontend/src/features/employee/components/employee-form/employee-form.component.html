@@ -1,0 +1,11 @@
+<p-card [style]="{'width': '30rem', 'margin-bottom': '2em', 'background': 'skyblue'}">
+  <div *ngIf="id">
+    <label for="user">Id: <b>{{id}}</b></label>
+  </div>
+  <div *ngIf="firstName">
+    <label for="name">First Name: <b>{{firstName}}</b></label>
+  </div>
+  <div *ngIf="lastName">
+    <label for="user">Last Name: <b>{{lastName}}</b></label>
+  </div>
+</p-card>
