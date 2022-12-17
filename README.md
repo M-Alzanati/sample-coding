@@ -49,9 +49,9 @@ $ docker build -t codingtaskangularapp .
 $ docker run -d -it -p 4200:80/tcp --name angular-app codingtaskangularapp
 ```
 
-### Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings
+### Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings.json
 
-### Change connection string in DefaultConnection in Example.CodingTask.Host/appsettings.Development
+### Change connection string in DefaultConnection in Example.CodingTask.Host/appsettings.json
 ________________________
 ## Connection string format:
 Server=ip, port;Database=name;Trusted_Connection=False;User Id=user_id;Password=user_password;
