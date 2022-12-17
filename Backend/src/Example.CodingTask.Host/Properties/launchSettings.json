@@ -10,12 +10,10 @@
     },
     "Example.CodingTask.Host": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "launchUrl": "Views/index.html",
+      "applicationUrl": "https://localhost:44337;http://localhost:44338",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:44337;http://localhost:59963"
+      }
     },
     "Docker": {
       "commandName": "Docker",
@@ -23,14 +21,6 @@
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "publishAllPorts": true,
       "useSSL": true
-    }
-  },
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:59963",
-      "sslPort": 44337
     }
   }
 }
