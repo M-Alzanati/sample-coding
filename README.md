@@ -4,7 +4,9 @@ This template should be used for coding tasks of Example.
 
 Three projects are included in this solution:
 - Example.CodingTask.Host: A .NET Core 6 Web Application
-- Example.CodingTask.Data: A .NET Core 6class library which includes the first implementation of DB Context and User table.
+- Example.CodingTask.Data: A .NET Core 6 class library which includes the first implementation of DB Context and User table.
+- Example.CodingTask.Core: A .NET Core 6 class library which includes models and dtos.
+- Example.CodingTask.Service: A .NET Core 6 class library which includes services.
 - Example.CodingTask.Utilities: A .NET Core 6 class library which includes the Hash Service.
 
 Database initialization has been implemented and configured in startup.
@@ -22,15 +24,11 @@ Following users are provisioned during startup:
 |User1|Password1|
 |User2|Password2|
 
-Example AJAX calls to ping APIs (with and without Authorization) are present under Example.CodingTask.Host/Views/index.html
 
 **Build FrontEnd**
 ```bash
-$ cd src/Frontend
-# install the project's dependencies
-$ npm i
-# run project at https://localhost:4200
-$ ng serve --ssl
+$ docker build -t codingtaskangularapp .
+$ docker run -d -it -p 4200:80/tcp --name angular-app codingtaskangularapp
 ```
 **Build Backend**
 ```bash
@@ -38,10 +36,12 @@ $ cd Backend/src
 $ docker build -t codingtaskimage .
 $ docker run -d -p 44337:80 -p 44338:443 --name codingtaskapi codingtaskimage
 
-
 # Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings
 
 # Change connection string in DefaultConnection in Example.CodingTask.Host/appsettings.Development
 ```
 
-**Please note that running the migrations will create outdated matches, so please update records in the database**
+**Connection string format**:
+Server=ip, port;Database=name;Trusted_Connection=False;User Id=user_id;Password=user_password;
+
+**Please note if the the database is not working, follow this url to enable remote connection https://medium.com/@vedkoditkar/connect-to-local-ms-sql-server-from-docker-container-9d2b3d33e5e9**
