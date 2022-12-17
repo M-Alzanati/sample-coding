@@ -16,7 +16,7 @@ namespace Example.CodingTask.Common.Configuration
             return configurationBuilder.Build();
         }
 
-        public static IServiceCollection ConfigureCleverbitCodingTaskCommon(
+        public static IServiceCollection ConfigureExampleCodingTaskCommon(
             this IServiceCollection serviceCollection,
             string environmentName)
         {

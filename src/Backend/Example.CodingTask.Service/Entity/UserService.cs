@@ -11,7 +11,7 @@ using Example.CodingTask.Service.Entity.Interface;
 
 namespace Example.CodingTask.Service.Entity
 {
-    public class UserService : GuidEntityService<User, UserDto, CreateBaseEntityDto>, IUserService
+    public class UserService : GuidEntityService<User, UserDto, CreateBaseEntityDto, UpdateBaseEntityDto>, IUserService
     {
         public UserService(IGenericRepository<User> repository, IMapper mapper)
             : base(repository, mapper)

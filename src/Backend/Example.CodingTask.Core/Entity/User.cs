@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Example.CodingTask.Core.Base;
+﻿using Example.CodingTask.Core.Base;
 
 namespace Example.CodingTask.Core.Entity
 {
@@ -8,7 +7,5 @@ namespace Example.CodingTask.Core.Entity
         public string UserName { get; set; }
 
         public string Password { get; set; }
-
-        public virtual ICollection<UserMatch> UserMatches { set; get; }
     }
 }

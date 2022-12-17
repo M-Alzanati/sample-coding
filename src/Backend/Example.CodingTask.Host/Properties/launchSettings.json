@@ -11,12 +11,12 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "Views/index.html",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Cleverbit.CodingTask.Host": {
+    "Example.CodingTask.Host": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "Views/index.html",

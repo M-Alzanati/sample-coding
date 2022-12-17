@@ -8,10 +8,11 @@ using Example.CodingTask.Core.Transient.Base;
 
 namespace Example.CodingTask.Service.Entity.Base
 {
-    public interface IGuidEntityService<TEntity, TEntityDto, TCreateEntityDto> 
+    public interface IGuidEntityService<TEntity, TEntityDto, TCreateEntityDto, TUpdateEntityDto> 
         where TEntity : GuidEntity
         where TEntityDto : GuidEntityDto
         where TCreateEntityDto: CreateBaseEntityDto
+        where TUpdateEntityDto : UpdateBaseEntityDto
     {
         Task<IList<TEntityDto>> QueryAsync(Expression<Func<TEntity, bool>> filter, CancellationToken cancellationToken);
 

@@ -12,9 +12,7 @@ namespace Example.CodingTask.Data
     {
         public virtual DbSet<User> Users { get; set; }
 
-        public virtual DbSet<Match> Matches { get; set; }
-
-        public virtual DbSet<UserMatch> UserMatches { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
 
         public CodingTaskContext(DbContextOptions<CodingTaskContext> options)
             : base(options)

@@ -11,22 +11,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Example.CodingTask.Service.Entity.Base
 {
-    public abstract class GuidEntityService<TEntity, TEntityDto, TCreateEntityDto> 
-        : BaseEntityService<TEntity, TEntityDto, TCreateEntityDto>, IGuidEntityService<TEntity, TEntityDto, TCreateEntityDto>
+    public abstract class GuidEntityService<TEntity, TEntityDto, TCreateEntityDto, TUpdateEntityDto> 
+        : BaseEntityService<TEntity, TEntityDto, TCreateEntityDto, TUpdateEntityDto>, IGuidEntityService<TEntity, TEntityDto, TCreateEntityDto, TUpdateEntityDto>
             where TEntity : GuidEntity
             where TEntityDto : GuidEntityDto
             where TCreateEntityDto : CreateBaseEntityDto
+            where TUpdateEntityDto : UpdateBaseEntityDto
     {
         protected GuidEntityService(IGenericRepository<TEntity> repository, IMapper mapper)
             : base(repository, mapper)
         {
-        }
-
-        public async Task<IList<TEntityDto>> QueryAsync(Expression<Func<TEntity, bool>> filter, CancellationToken cancellationToken)
-        {
-            var result = await Repository.GetAsync(filter, null, null).ToListAsync(cancellationToken);
-
-            return Mapper.Map<IList<TEntityDto>>(result);
         }
 
         public async Task<IList<TEntityDto>> GetAll(CancellationToken cancellationToken)
@@ -62,12 +56,11 @@ namespace Example.CodingTask.Service.Entity.Base
             return Mapper.Map<TEntityDto>(result);
         }
 
-        public async Task<TEntityDto> UpdateAsync<TEntityUpdateDto>(Guid id, TEntityUpdateDto entityToUpdate,
-            CancellationToken cancellationToken)
+        public async Task<TEntityDto> UpdateAsync<TEntityUpdateDto>(Guid id, TEntityUpdateDto entityToUpdate, CancellationToken cancellationToken)
         {
             var entity = await Repository.GetByIdAsync(id, cancellationToken);
-            var item = Mapper.Map(entityToUpdate, entity);
-            var result = await Repository.UpdateAsync(item, cancellationToken);
+            var mappedEntity = Mapper.Map(entityToUpdate, entity);
+            var result = await Repository.UpdateAsync(mappedEntity, cancellationToken);
             return Mapper.Map<TEntityDto>(result);
         }
     }

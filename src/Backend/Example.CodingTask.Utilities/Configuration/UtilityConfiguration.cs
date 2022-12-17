@@ -5,7 +5,7 @@ namespace Example.CodingTask.Utilities.Configuration
 {
     public static class UtilityConfiguration
     {
-        public static void ConfigureCleverbitCodingTaskServiceService(this IServiceCollection serviceCollection)
+        public static void ConfigureExampleCodingTaskServiceService(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddSingleton<IHashService, HashService>();
         }

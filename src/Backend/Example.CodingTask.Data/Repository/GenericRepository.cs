@@ -53,7 +53,7 @@ namespace Example.CodingTask.Data.Repository
 
         public async Task<TEntity> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
-            return await _dbSet.FindAsync(new object[]{id}, cancellationToken);
+            return await _dbSet.FindAsync(new object[] { id }, cancellationToken);
         }
 
         public async Task<TEntity> InsertAsync(TEntity entity, CancellationToken cancellationToken)
@@ -65,7 +65,7 @@ namespace Example.CodingTask.Data.Repository
 
         public async Task<TEntity> DeleteAsync(Guid id, CancellationToken cancellationToken)
         {
-            var entityToDelete = await _dbSet.FindAsync(id, cancellationToken);
+            var entityToDelete = await _dbSet.FindAsync(new object[] { id }, cancellationToken);
             return await DeleteAsync(entityToDelete, cancellationToken);
         }
 

@@ -7,7 +7,7 @@ using Example.CodingTask.Service.Entity.Base;
 
 namespace Example.CodingTask.Service.Entity.Interface
 {
-    public interface IUserService : IGuidEntityService<User, UserDto, CreateBaseEntityDto>
+    public interface IUserService : IGuidEntityService<User, UserDto, CreateBaseEntityDto, UpdateBaseEntityDto>
     {
         Task<UserDto> GetUserByPasswordAndEmail(string email, string hashPassword, CancellationToken cancellationToken);
     }

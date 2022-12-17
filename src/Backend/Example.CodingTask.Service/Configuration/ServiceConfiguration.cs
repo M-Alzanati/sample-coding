@@ -9,17 +9,13 @@ namespace Example.CodingTask.Service.Configuration
 {
     public static class ServiceConfiguration
     {
-        public static void ConfigureCleverbitCodingTaskService(
-            this IServiceCollection serviceCollection,
-            IConfiguration configuration,
-            string environmentName)
+        public static void ConfigureExampleCodingTaskService(this IServiceCollection serviceCollection, IConfiguration configuration, string environmentName)
         {
             serviceCollection.AddAutoMapper(Assembly.GetExecutingAssembly());
             serviceCollection.ConfigureCodingTaskContextDb(environmentName);
 
             serviceCollection.AddTransient<IUserService, UserService>();
-            serviceCollection.AddTransient<IMatchService, MatchService>();
-            serviceCollection.AddTransient<IUserMatchService, UserMatchService>();
+            serviceCollection.AddTransient<IEmployeeService, EmployeeService>();
             serviceCollection.AddScoped<IAuthenticationService, AuthenticationService>();
         }
     }

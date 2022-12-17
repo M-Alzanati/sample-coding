@@ -34,18 +34,6 @@ namespace Example.CodingTask.Data.Configuration
                     Password = await hashService.HashText("Password2")
                 });
 
-                context.Users.Add(new User
-                {
-                    UserName = "User3",
-                    Password = await hashService.HashText("Password3")
-                });
-
-                context.Users.Add(new User
-                {
-                    UserName = "User4",
-                    Password = await hashService.HashText("Password4")
-                });
-
                 anyNewUser = true;
             }
 

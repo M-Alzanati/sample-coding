@@ -1,11 +1,11 @@
-# Cleverbit Coding Task Task Template
+# Example Coding Task Task Template
 
-This template should be used for coding tasks of Cleverbit.
+This template should be used for coding tasks of Example.
 
 Three projects are included in this solution:
-- Cleverbit.CodingTask.Host: A .NET Core 3.1 Web Application
-- Cleverbit.CodingTask.Data: A .NET Core 3.1 class library which includes the first implementation of DB Context and User table.
-- Cleverbit.CodingTask.Utilities: A .NET Core 3.1 class library which includes the Hash Service.
+- Example.CodingTask.Host: A .NET Core 6 Web Application
+- Example.CodingTask.Data: A .NET Core 6class library which includes the first implementation of DB Context and User table.
+- Example.CodingTask.Utilities: A .NET Core 6 class library which includes the Hash Service.
 
 Database initialization has been implemented and configured in startup.
 
@@ -21,10 +21,8 @@ Following users are provisioned during startup:
 |-|-|
 |User1|Password1|
 |User2|Password2|
-|User3|Password3|
-|User4|Password4|
 
-Example AJAX calls to ping APIs (with and without Authorization) are present under Cleverbit.CodingTask.Host/Views/index.html
+Example AJAX calls to ping APIs (with and without Authorization) are present under Example.CodingTask.Host/Views/index.html
 
 **Build FrontEnd**
 ```bash
@@ -38,11 +36,11 @@ $ ng serve --ssl
 ```bash
 $ cd src/Backend
 # Create database
-$ dotnet ef database update --project Cleverbit.CodingTask.Data
+$ dotnet ef database update --project Example.CodingTask.Data
 
-# Change connection string in DefaultConnection in Cleverbit.CodingTask.Data/appsettings
+# Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings
 
-# Change connection string in DefaultConnection in Cleverbit.CodingTask.Host/appsettings.Development
+# Change connection string in DefaultConnection in Example.CodingTask.Host/appsettings.Development
 ```
 
 **Please note that running the migrations will create outdated matches, so please update records in the database**

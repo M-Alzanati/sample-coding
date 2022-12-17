@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Example.CodingTask.Core.Base;
+using Microsoft.EntityFrameworkCore;
 
 namespace Example.CodingTask.Data.Repository
 {

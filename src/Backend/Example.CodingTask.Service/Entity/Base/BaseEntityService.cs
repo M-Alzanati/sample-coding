@@ -12,10 +12,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Example.CodingTask.Service.Entity.Base
 {
-    public abstract class BaseEntityService<TEntity, TEntityDto, TCreateEntityDto> : IBaseEntityService<TEntity, TEntityDto, TCreateEntityDto>
+    public abstract class BaseEntityService<TEntity, TEntityDto, TCreateEntityDto, TUpdateEntityDto> : IBaseEntityService<TEntity, TEntityDto, TCreateEntityDto, TUpdateEntityDto>
         where TEntity : BaseEntity
         where TEntityDto : BaseEntityDto
         where TCreateEntityDto : CreateBaseEntityDto
+        where TUpdateEntityDto : UpdateBaseEntityDto
     {
         protected readonly IGenericRepository<TEntity> Repository;
 
@@ -48,6 +49,14 @@ namespace Example.CodingTask.Service.Entity.Base
             var result = await Repository.InsertAsync(entity, cancellationToken);
 
             return Mapper.Map<TEntity, TEntityDto>(result);
+        }
+
+        public async Task<TEntityDto> UpdateAsync(Guid id, TUpdateEntityDto updateEntityDto, CancellationToken cancellationToken)
+        {
+            var entity = await Repository.GetByIdAsync(id, cancellationToken);
+            var mappedEntity = Mapper.Map(updateEntityDto, entity);
+            var result = await Repository.UpdateAsync(mappedEntity, cancellationToken);
+            return Mapper.Map<TEntityDto>(result);
         }
     }
 }

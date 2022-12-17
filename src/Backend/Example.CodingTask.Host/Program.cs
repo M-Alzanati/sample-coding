@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using Cleverbit.CodingTask.Data;
 using Example.CodingTask.Data;
 using Example.CodingTask.Utilities.Helper;
 using Microsoft.AspNetCore.Hosting;

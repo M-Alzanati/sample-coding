@@ -15,7 +15,7 @@ namespace Example.CodingTask.Data
         {
             var environmentName = Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT");
             var serviceCollection = new ServiceCollection();
-            serviceCollection.ConfigureCleverbitCodingTaskCommon(environmentName);
+            serviceCollection.ConfigureExampleCodingTaskCommon(environmentName);
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
             var configuration = serviceProvider.GetService<IConfiguration>();
