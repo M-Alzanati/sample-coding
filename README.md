@@ -24,24 +24,36 @@ Following users are provisioned during startup:
 |User1|Password1|
 |User2|Password2|
 
-
 **Build FrontEnd**
 ```bash
-$ docker build -t codingtaskangularapp .
-$ docker run -d -it -p 4200:80/tcp --name angular-app codingtaskangularapp
+$ npm install
+$ ng serve
 ```
 **Build Backend**
 ```bash
 $ cd Backend/src
+$ dotnet ef database update --project "Example.CodingTask.Data/Example.CodingTask.Data.csproj"
+$ Open visual studio and run
+```
+**Build Backend With Docker**
+```bash
+$ cd Backend/src
 $ docker build -t codingtaskimage .
 $ docker run -d -p 44337:80 -p 44338:443 --name codingtaskapi codingtaskimage
-
-# Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings
-
-# Change connection string in DefaultConnection in Example.CodingTask.Host/appsettings.Development
 ```
 
-**Connection string format**:
+```
+**Build FrontEnd With Docker**
+```bash
+$ docker build -t codingtaskangularapp .
+$ docker run -d -it -p 4200:80/tcp --name angular-app codingtaskangularapp
+```
+
+### Change connection string in DefaultConnection in Example.CodingTask.Data/appsettings
+
+### Change connection string in DefaultConnection in Example.CodingTask.Host/appsettings.Development
+________________________
+## Connection string format:
 Server=ip, port;Database=name;Trusted_Connection=False;User Id=user_id;Password=user_password;
 
 **Please note if the the database is not working, follow this url to enable remote connection https://medium.com/@vedkoditkar/connect-to-local-ms-sql-server-from-docker-container-9d2b3d33e5e9**
